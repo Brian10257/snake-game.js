@@ -1,27 +1,33 @@
 .rule {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(0, 0, 0);
     font-weight: 900;
     font-family: monospace;
 }
+
+canvas {
+            display: block;
+            margin-top: 50px;
+            margin-left: 500px;
+        }
 
 body {
     background: linear-gradient(to right, #5ef4ff, #3fa5ce, #081d25);
 }
 
 .rule::before {
-    content: '....................................................................................................';
+    content: '................................................................................................................................................................';
     display: block;
     color: crimson;
-    line-height: 1px;
-    font-size: 20px;
+    line-height: 5px;
+    font-size: 10px;
 }
 
 .rule::after {
-    content: '....................................................................................................';
+    content: '................................................................................................................................................................';
     display: block;
     color: crimson;
-    line-height: 1px;
-    font-size: 20px;
+    line-height: 5px;
+    font-size: 10px;
 }
