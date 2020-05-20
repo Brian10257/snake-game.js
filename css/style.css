@@ -1,0 +1,19 @@
+.rule {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(144, 167, 15);
+    font-weight: 900;
+    font-family: monospace;
+}
+
+body {
+    background: linear-gradient(to right, #5ef4ff, #3fa5ce, #081d25);
+}
+
+.rule::after{
+    content: '...';
+    display: block;
+    color: rgba(0, 0, 0, 0.5);
+    line-height: 1px;
+    font-size: 20px;
+}

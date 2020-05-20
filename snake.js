@@ -1,9 +1,8 @@
-const canvas = document.getElementById("snake");
-const gamer = canvas.getContext("2d");
+const canv = document.getElementById("snake");
+const gamer = canv.getContext("2d");
 
 // create the unit
 const box = 32;
-
 // load images
 
 const ground = new Image();
@@ -20,12 +19,12 @@ const left = new Audio();
 const right = new Audio();
 const down = new Audio();
 
-dead.src = "audio/dead.mp3";
-eat.src = "audio/eat.mp3";
-up.src = "audio/up.mp3";
-left.src = "audio/left.mp3";
-right.src = "audio/right.mp3";
-down.src = "audio/down.mp3";
+dead.src = "./audio/dead.mp3";
+eat.src = "./audio/eat.mp3";
+up.src = "./audio/up.mp3";
+left.src = "./audio/left.mp3";
+right.src = "./audio/right.mp3";
+down.src = "./audio/down.mp3";
 
 //create the snake
 let snake = [];
@@ -47,6 +46,7 @@ let score = 0;
 
 // control the snake
 let d;
+
 document.addEventListener("keydown", direction);
 
 function direction(event) {
@@ -58,7 +58,7 @@ function direction(event) {
     up.play();
     d = "UP";
   } else if (key == 39 && d != "LEFT") {
-    right.play();
+    right.play(); 
     d = "RIGHT";
   } else if (key == 40 && d != "UP") {
     down.play();
