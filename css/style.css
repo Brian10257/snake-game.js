@@ -1,7 +1,7 @@
 .rule {
     text-align: center;
     font-size: 50px;
-    color: rgb(144, 167, 15);
+    color: rgb(0, 0, 0);
     font-weight: 900;
     font-family: monospace;
 }
@@ -10,10 +10,18 @@ body {
     background: linear-gradient(to right, #5ef4ff, #3fa5ce, #081d25);
 }
 
-.rule::after{
-    content: '...';
+.rule::after {
+    content: '....................................................................................................';
     display: block;
-    color: rgba(0, 0, 0, 0.5);
+    color: crimson;
+    line-height: 1px;
+    font-size: 20px;
+}
+
+.rule::before {
+    content: '....................................................................................................';
+    display: block;
+    color: crimson;
     line-height: 1px;
     font-size: 20px;
 }
